@@ -5,3 +5,7 @@ In order to run the code, you should create a ros package on your catkin workspa
 Then just build the code with catkin_make at the root of your workspace.
 
 Before running, source devel/setup.bash of your catkin_ws.
+
+When you run BasePublisher and ReceiverTranslator you also have to run tf 
+for example:
+rosrun tf tf_echo /world /bade_tf_enu
