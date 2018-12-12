@@ -1,13 +1,13 @@
+#include <math.h>
 #include <ros/ros.h>
 #include <tf/transform_broadcaster.h>
-#include <math.h>
 #include "ros_transframes/ReceiverTranslator.hpp"
 
 /**
  * This class subscribes to world/base_tf_enu , converts it into NED and NWU and
  * publishes converted reference frames into world/tf_ned and world/tf_nwu accordingly
  */
-ReceiverTranslator::ReceiverTranslator() { }
+ReceiverTranslator::ReceiverTranslator() {}
 //! @name transform objects for both translations
 tf::TransformBroadcaster br1;
 tf::TransformBroadcaster br2;
@@ -28,7 +28,7 @@ void ReceiverTranslator::setTransform()
     // create transform from base_tf_enu to tf_ned
     br1.sendTransform(tf::StampedTransform(transform1, ros::Time::now(), "base_tf_enu", "tf_ned"));
     // create transform from base_tf_enu to tf_ned
-    br2.sendTransform(tf::StampedTransform(transform2,ros::Time::now(), "base_tf_enu", "tf_nwu"));
+    br2.sendTransform(tf::StampedTransform(transform2, ros::Time::now(), "base_tf_enu", "tf_nwu"));
 }
 
 
