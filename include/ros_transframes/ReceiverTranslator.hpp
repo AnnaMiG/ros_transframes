@@ -10,7 +10,7 @@ private:
     tf::TransformBroadcaster br2;
 public:
     ReceiverTranslator();
-    void setTransform();
+    void setTransform(ros::Time t);
 };
 
-#endif /// RECEIVERTRANSLATOR_HPP 
+#endif /// RECEIVERTRANSLATOR_HPP

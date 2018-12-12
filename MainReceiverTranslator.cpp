@@ -12,7 +12,7 @@ int main(int argc, char **argv)
     /// the transframes tf_ned and tf_nwu will be published every second
     while(n.ok())
     {
-        tr_Obj.setTransform();
+        tr_Obj.setTransform(ros::Time::now());
         rate.sleep();
     }
     return 0;
