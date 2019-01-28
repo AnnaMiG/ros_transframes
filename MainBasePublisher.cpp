@@ -1,6 +1,4 @@
-#include <ros/ros.h>
 #include "ros_transframes/BasePublisher.hpp"
-#include <tf/transform_broadcaster.h>
 
 
 int main(int argc, char **argv)

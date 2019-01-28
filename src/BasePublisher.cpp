@@ -1,11 +1,3 @@
-#include <iostream>
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <vector>
-#include <sstream>
-#include <ros/ros.h>
-#include <tf/transform_broadcaster.h>
 #include "ros_transframes/BasePublisher.hpp"
 
 

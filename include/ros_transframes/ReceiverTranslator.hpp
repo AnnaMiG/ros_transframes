@@ -1,7 +1,8 @@
 #ifndef RECEIVERTRANSLATOR_HPP
 #define RECEIVERTRANSLATOR_HPP
 #include <tf/transform_broadcaster.h>
-
+#include <ros/ros.h>
+#include <math.h>
 
 class ReceiverTranslator
 {
